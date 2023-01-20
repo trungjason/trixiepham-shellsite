@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+
+    <title>Trixie Pham - Portfolio</title>
+
+    <script src="./scripts/modal.js"></script>
+</head>
+
+<body>
+    <!-- #region Header -->
+    <header id="main-header">
+        <div class="header-heading-wrapper">
+            <a href="./home.html" class="header-heading-link">
+                <h1 class="header-heading">
+                    TRIXIE
+                    <br />
+                    PHAM
+                </h1>
+            </a>
+        </div>
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li class="menu__box-heading">Menu</li>
+                <li class="header-nav-mobile-list-item">
+                    <a href="about.html" class="header-nav-mobile-list-item-link border-anim-left-to-right">
+                        About
+                    </a>
+                </li>
+                <li class="header-nav-mobile-list-item">
+                    <a href="projects.html" class="header-nav-mobile-list-item-link border-anim-left-to-right">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item">
+                    <a href="about.html" class="header-nav-list-item-link border-anim-left-to-right">
+                        About
+                    </a>
+                </li>
+                <li class="header-nav-list-item">
+                    <a href="projects.html" class="header-nav-list-item-link border-anim-left-to-right">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-socials-media-wrapper">
+            <div class="header-line">
+
+            </div>
+
+            <div class="socials-media-wrapper">
+                <ul class="socials-media-list flex-column">
+                    <li class="socials-media-list-item">
+                        <a href="https://www.instagram.com/chuup.foodaholic/?hl=en" target="_blank"
+                            class="socials-media-list-item-link">
+                            <img srcset="./images/header/Instagram.png 2x" alt="" class="socials-media-img">
+                        </a>
+                    </li>
+                    <li class="socials-media-list-item">
+                        <a href="https://www.linkedin.com/in/trixie-pham-819b27203/" target="_blank"
+                            class="socials-media-list-item-link">
+                            <img srcset="./images/header/Linkedin.png 2x" alt="" class="socials-media-img">
+                        </a>
+                    </li>
+                    <li class="socials-media-list-item">
+                        <a href="#" class="socials-media-list-item-link">
+                            <img srcset="./images/header/Behance.png 2x" alt="" class="socials-media-img">
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- #endregion Header -->
+
+    <div class="wrapper">
+        <main>
+            <div class="homepage-intro-container">
+                <div class="homepage-intro-heading-wrapper" data-aos="fade-down" data-aos-duration="2000">
+                    <h1 class="homepage-intro-heading">Hi, I'm Trixie Pham</h1>
+                </div>
+
+                <div class="homepage-intro-sub-content-wrapper" data-aos="zoom-in" data-aos-duration="2000">
+                    <p class="homepage-intro-sub-content">
+                        I am a junior UI/UX designer with boundless energy who
+                        is constantly seeking to grow.
+                    </p>
+                </div>
+
+                <button class="btn btn--primary" data-aos="fade-up" data-aos-duration="2000">read more</button>
+
+                <div class="scroll-down" data-aos="zoom-in" data-aos-duration="2000">
+                    <!-- Solution 1: Not working on animation rotate -->
+                    <!-- <div class="circle-text-wrapper">
+                        <h1 class="circle-text">my selected projects</h1>
+                    </div> -->
+
+                    <div class="circle-text-wrapper">
+                        <img srcset="./images/home/CircleText.png 2x" alt="Circle Text Image" class="circle-text-image">
+                    </div>
+
+                    <a href="#selectedProjects" class="animate"></a>
+                </div>
+            </div>
+
+            <div id="selectedProjects" class="homepage-selected-project-container">
+                <h2 class="homepage-selected-project-heading" data-aos="fade-down" data-aos-duration="2000">My Feature
+                    Projetcs</h2>
+
+                <div class="homepage-selected-project-carousel-wrapper" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="homepage-selected-project-carousel carousel">
+                        <div class="selected-project-item">
+                            <div class="selected-project-image-wrapper">
+                                <img srcset="./images/home/downtown-flea-market.png 2x"
+                                    alt="Downtown flea market project image"
+                                    class="selected-project-image modal-popup-able">
+                            </div>
+                            <div class="selected-project-detail">
+                                <a href="./project-detail-one.html" class="project-detail-link">
+                                    <button class="btn btn--primary white-color">read more</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="selected-project-item">
+                            <div class="selected-project-image-wrapper">
+
+                                <img srcset="./images/home/smart-pot.png 2x" alt="Smartpot project image"
+                                        class="selected-project-image modal-popup-able">
+                            </div>
+                            <div class="selected-project-detail">
+                                <a href="./project-detail-two.html" class="project-detail-link">
+                                    <button class="btn btn--primary white-color">read more</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="selected-project-item">
+                            <div class="selected-project-image-wrapper">
+                                <img srcset="./images/home/pet-vet.png 2x" alt="Pet vet project image"
+                                        class="selected-project-image modal-popup-able">
+                            </div>
+                            <div class="selected-project-detail">
+                                <a href="./project-detail-three.html" class="project-detail-link">
+                                    <button class="btn btn--primary white-color">read more</button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- #region Footer -->
+    <footer id="main-footer">
+        <div class="footer-heading-wrapper">
+
+            <a href="#main-header" class="footer-heading-link">
+                <h1 class="footer-heading">
+                    TRIXIE
+                    <br />
+                    PHAM
+                </h1>
+            </a>
+        </div>
+
+        <div class="footer-content-wrapper">
+            <div class="footer-content">
+                <h4>Let's connect!</h4>
+                <p>Feel free to message me at</p>
+                <a href="mailto: tructhupham39@gmail.com" class="footer-email-link">tructhupham39@gmail.com</a>
+            </div>
+
+            <div class="socials-media-wrapper">
+                <ul class="socials-media-list">
+                    <li class="socials-media-list-item">
+                        <a href="https://www.instagram.com/chuup.foodaholic/?hl=en" target="_blank"
+                            class="socials-media-list-item-link">
+                            <img srcset="./images/header/Instagram.png 2x" alt="" class="nav_socials-media-img">
+                        </a>
+                    </li>
+                    <li class="socials-media-list-item">
+                        <a href="https://www.linkedin.com/in/trixie-pham-819b27203/" target="_blank"
+                            class="socials-media-list-item-link">
+                            <img srcset="./images/header/Linkedin.png 2x" alt="" class="nav_socials-media-img">
+                        </a>
+                    </li>
+                    <li class="socials-media-list-item">
+                        <a href="#" class="socials-media-list-item-link">
+                            <img srcset="./images/header/Behance.png 2x" alt="" class="nav_socials-media-img">
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright-wrapper">
+            <p>Copyright &copy; Trixie Pham 2022</p>
+        </div>
+    </footer>
+    <!-- #endregion Footer -->
+
+
+    <!-- The Modal -->
+    <div id="image-popup-modal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <div class="modal-image-wrapper">
+            <!-- Modal Content (The Image) -->
+
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+        // Link to AOS
+        //https://michalsnik.github.io/aos/?fbclid=IwAR1TYfLDGoBj7QK7j2bB9cY3RVEpeaowZpxw19ZZI3sIvdum6TDp_oIHoME
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".homepage-selected-project-carousel").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: true,
+                draggable: false,
+                infinite: true,
+                dots: true,
+                prevArrow:
+                    "<button type='button' class='slick-prev pull-left slick-button-custom'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow:
+                    "<button type='button' class='slick-next pull-right slick-button-custom'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+            });
+        });
+    </script>
+</body>
+
+</html>

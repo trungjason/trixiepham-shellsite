@@ -1,0 +1,99 @@
+.information-gathering-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.information-gathering-container .section-content-img-wrapper {
+  max-width: 570px;
+}
+
+.information-gathering-section-content {
+  max-width: 570px;
+}
+
+/* Waterfall */
+.waterfall-methodology-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.waterfall-methodology-wrapper .section-content-img-wrapper{
+    max-width: 550px;
+    max-height: 480px;
+
+}
+
+.waterfall-methodology-wrapper .section-content-wrapper{
+    flex-grow: 1;
+    max-width: 690px;
+}
+
+/* UI/UX Design */
+.ui-ux-design-wrapper {
+
+}
+
+.ui-ux-design-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(600px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+
+    grid-column-gap: 40px;
+}
+
+.ui-ux-design-grid .section-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p.img-description {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.final-product-img-wrapper {
+  max-height: 670px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1370px) {
+  .information-gathering-container,
+  .waterfall-methodology-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .information-gathering-section-content,
+  .waterfall-methodology-container .section-content-img-wrapper,
+  .waterfall-methodology-wrapper .section-content-wrapper {
+    max-width: 100%;
+  }
+
+  .waterfall-methodology-wrapper .section-content-img-wrapper {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .ui-ux-design-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .information-gathering-container .section-content-img-wrapper {
+    min-width: auto;
+  }
+}

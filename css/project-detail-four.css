@@ -1,0 +1,62 @@
+.generate-idea-container,
+.information-collection-container,
+.input-testing-container,
+.sketchs-container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.generate-idea-container .section-content-img-wrapper,
+.information-collection-container .section-content-img-wrapper, 
+.sketchs-container .section-content-img-wrapper, 
+.input-testing-container .section-content-img-wrapper
+{
+  max-width: 570px;
+}
+
+.generate-idea-container .section-content-img-wrapper,
+.input-testing-container .section-content-img-wrapper
+{
+    max-height: 320px;
+}
+
+.generate-idea-section-content,
+.information-collection-section-content,
+.sketchs-section-content,
+.input-testing-section-content
+{
+  max-width: 570px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1370px) {
+  .generate-idea-container,
+  .information-collection-container,
+  .sketchs-container,
+  .input-testing-container
+   {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .generate-idea-section-content, 
+  .information-collection-section-content, 
+  .sketchs-section-content, 
+  .input-testing-section-content
+  {
+    max-width: 100%;
+  }
+
+  .generate-idea-container .section-content-img-wrapper,
+  .information-collection-container .section-content-img-wrapper,
+  .sketchs-container .section-content-img-wrapper,
+  .input-testing-container .section-content-img-wrapper
+   {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,479 @@
+.homepage-intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 138px;
+}
+.homepage-intro-heading-wrapper {
+}
+
+h1.homepage-intro-heading {
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 66px;
+  line-height: 82%;
+
+  letter-spacing: 0.095em;
+  color: #86cac9;
+  background-color: transparent;
+  text-align: center;
+
+  position: relative;
+
+  
+  text-shadow: 0px 9px 10px rgba(134, 202, 201, 0.6);
+}
+
+/* h1.homepage-intro-heading::after {
+  display: inline-block;
+  content: "";
+  width: 50%;
+  height: 32px;
+
+  background-color: #baeefa;
+  border-radius: 7px;
+
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  z-index: -1;
+} */
+
+.homepage-intro-sub-content-wrapper {
+  max-width: 680px;
+  margin-top: 32px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.homepage-intro-sub-content {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 49px;
+
+  color: #000000;
+}
+
+.scroll-down {
+  margin-top: 120px;
+  margin-bottom: 240px;
+}
+
+/* #region Circle Text Solution 1 */
+.circle-text-wrapper {
+  position: absolute;
+  top: -55%;
+  left: 50%;
+  /* animation: rotation 2s infinite linear; */
+}
+
+h1.circle-text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #000000;
+  height: 60px;
+}
+
+span.span-circle-text {
+  position: absolute;
+  transform-origin: 0 60px;
+}
+
+.circle-text-wrapper {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 170px;
+  height: 170px;
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* #endregion */
+
+.homepage-selected-project-container {
+  min-height: 800px;
+  background-color: #eff9f9;
+
+  padding-top: 44px;
+  padding-bottom: 130px;
+}
+
+.homepage-selected-project-heading {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+
+  color: #000000;
+
+  margin-top: 44px;
+  margin-bottom: 70px;
+}
+
+.homepage-selected-project-carousel-wrapper {
+  max-width: 1080px;
+  min-height: 550px;
+  margin: 0 auto;
+
+  border: 1px solid #000000;
+  border-radius: 20px;
+
+  padding: 16px 32px 21px 32px;
+}
+
+.homepage-selected-project-carousel {
+  height: 510px;
+  opacity: 0.99999999999999999999;
+}
+
+.carousel {
+}
+
+.selected-project-item {
+  height: 510px;
+  position: relative;
+  opacity: 0.99999999999999999999;
+}
+
+.selected-project-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 510px;
+  opacity: 0.99999999999999999999;
+}
+
+.selected-project-image {
+  height: 510px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.selected-project-detail {
+  position: absolute;
+  right: 9.5%;
+  bottom: 80px;
+}
+.white-color {
+  color: var(--white-color) !important;
+}
+/* Custom carousel */
+.slick-button-custom {
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  color: black;
+
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 70px;
+  height: 70px;
+
+  font-size: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 3;
+
+  transition: all 0.25s linear;
+}
+
+.slick-button-custom:hover {
+  font-size: 50px;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+ul.slick-dots {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+
+  transform: translate(-50%, 100%);
+
+  list-style: none;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-self: center !important;
+
+  gap: 0 20px;
+}
+
+ul.slick-dots button {
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+
+  border-radius: 100rem;
+  background-color: transparent;
+
+  border: 1px solid black;
+  outline: none;
+
+  transition: all 0.25s linear;
+}
+
+ul.slick-dots li.slick-active button {
+  background-color: black;
+}
+
+/* #region Scroll down animation */
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+@-ms-keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+
+.scroll-down {
+  border: 2px solid black;
+
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.scroll-down a:before,
+.scroll-down a:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../images/home/Arrow-down.svg") no-repeat center top;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.scroll-down a:before {
+  -webkit-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+  -moz-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+  -o-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+  animation: pulse 1.5s 0.25s infinite normal ease forwards;
+}
+.scroll-down a:after {
+  -webkit-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+  -moz-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+  -o-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+  animation: pulse 1.5s 0.5s infinite normal ease forwards;
+}
+.scroll-down a:hover {
+  background-color: black;
+}
+/* #endregion Scroll down animation */
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+  .homepage-selected-project-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .slick-next {
+    right: -5%;
+  }
+
+  .slick-prev {
+    left: -5%;
+  }
+
+  .homepage-selected-project-carousel-wrapper {
+    padding: 0;
+    min-height: 100%;
+  }
+  
+  .homepage-selected-project-carousel,
+  .slick-list,
+  .selected-project-item {
+    border-radius: 15px;
+  }
+
+  .slick-slide img {
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .homepage-intro-container {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  h1.homepage-intro-heading::after {
+    display: none;
+  }
+
+  .homepage-selected-project-container {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .slick-next {
+    right: -10%;
+  }
+
+  .slick-prev {
+    left: -10%;
+  } */
+}

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Fredericka+the+Great&display=swap");
+
+:root {
+  /* Colors */
+  --white-color: #fff;
+  --black-color: #000;
+  --based-color: #ad5211;
+  --primary-color: #40b8a2;
+  --primary-fader-color: #86cac9;
+  --light-color: #eff9f9;
+
+  --header-height: 84px;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  /* Fix AOS */
+  /* overflow-x: hidden; */
+}
+
+html, body {
+  width: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #d0f7f7;
+}
